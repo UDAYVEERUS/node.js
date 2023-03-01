@@ -7,9 +7,14 @@ connectMongo()
 
 const port = 3022
 
-
+//USER ROUTE
 app.use("/user",require('./user/route'))
 
+//PRODUCT ROUTE
+app.use("/products",require("./products/route"))
+
+//CATEGORIES ROUTE
+app.use("/category",require('./categories/route'))
 
 
 app.get("/",(req, res)=>{
