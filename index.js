@@ -16,6 +16,8 @@ app.use("/products",require("./products/route"))
 //CATEGORIES ROUTE
 app.use("/category",require('./categories/route'))
 
+// CONTACT ROUTE
+app.use("/contact",require("./contact/route"))
 
 app.get("/",(req, res)=>{
     res.json("josn")
